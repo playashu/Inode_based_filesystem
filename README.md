@@ -1,7 +1,5 @@
 # Simple File System Implementation
 Create a virtual disk based file system where we use inodes to store files and perform disk and file operations.
-
-![](/imgs/img1.png)
 #### Disk: 
 It is basically a file that represents the disk on a UNIX system
 The first block is the super block that contains metadata about the disk, the size of the disk, the no. of inodes, the no. of data blocks and how many are free and how many are allocated.
@@ -31,7 +29,6 @@ Contains file information and how the file is stored on the disk using direct,in
 
 #### Data block: 
 Each data block is of size 4KB. It can either be a indirect block,containing indirect pointers. or a data block containing data of a file.
-![](/imgs/img2.png)
 
 #### File operations :
 1. Create a file : allocate new inode ,give it a name and write the inode to disk,mark it as not free
