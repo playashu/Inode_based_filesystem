@@ -42,10 +42,11 @@ Each data block is of size 4KB. It can either be a indirect block,containing ind
 9. list files: shows the list of files/inodes present on the disk.
 10. list open files: lists the open file descriptors
 
+<!---
 #### Rough Design:
 ![](/imgs/img10.jpg)
 ![](/imgs/img11.jpg)
-
+-->
 
 #### Limitations:
 1. Single indirect pointers: multi-level indirect pointers can be implemented by recursively creating indirect pointers by dividing the file size each time.
